@@ -80,6 +80,13 @@ body{
       display:flex;
       align-items: center;
       justify-content: space-between;
+      a{
+        font-family: 'Russo One';
+        color:$color-default;
+        &:hover{
+          opacity: .8;
+        }
+      }
     }
   }
 }
