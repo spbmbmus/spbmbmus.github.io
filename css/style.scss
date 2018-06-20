@@ -320,3 +320,50 @@ h2.show_answer,p.show_answer{
     margin-bottom: px-rem(16)
   }
 }
+
+.bonus-1{
+  margin-bottom:px-rem(32);
+  >div{
+    height:px-rem(150);
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    >p{
+      display: flex;
+      margin-top: px-rem(8);
+      span{
+        display:block;
+        width:px-rem(90);
+      }
+    }
+  }
+}
+
+.bonus-1-cards{
+  display:flex;
+  .row{
+    display: flex;
+    margin-bottom:px-rem(16);
+  }
+  .card{
+    margin-right:px-rem(8);
+    div{
+      border:px-rem(2) solid white;
+      width:px-rem(50);
+      height:px-rem(30);
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      &:first-child{
+        background-color: white;
+      }
+      &:last-child{
+        color:$color-beige;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

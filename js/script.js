@@ -22,3 +22,8 @@ function showAfisha(obj){
 function showArt(obj){
   $('[id^='+obj.id+']').hide();
 }
+
+function showCards(obj){
+  $('.card div:last-child').css('color','#502d16');
+  $(obj).hide();
+}
