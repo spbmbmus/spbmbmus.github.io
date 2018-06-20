@@ -229,3 +229,48 @@ button[type=button]{
     line-height:1.5;
   }
 }
+
+.hidden-object{
+  .playfield{
+    background-position: center;
+    background-size: cover;
+    background-image: url(../files/09/stol2.jpg);
+    >div{
+      padding-top:67%;
+      position: relative;
+      >img{
+        position:absolute;
+        &.belka{
+          top:0;
+          right:px-rem(150);
+          width:px-rem(150);
+        }
+        &.burger_king{
+          top:px-rem(470);
+          left:px-rem(420);
+          width:px-rem(60);
+        }
+        &.nout{
+          top:px-rem(370);
+          left:px-rem(180);
+          width:px-rem(270);
+        }
+        &.phone{
+          top:px-rem(445);
+          left:px-rem(500);
+          width:px-rem(130);
+        }
+        &.ochki{
+          top:px-rem(430);
+          left:px-rem(690);
+          width:px-rem(70);
+        }
+        &.krem{
+          bottom:px-rem(20);
+          right:px-rem(90);
+          width:px-rem(90);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Презентация</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.gen.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
+  </head>
+  <body class="beige-back">
+    <main>
+    <article class="container">
+      <h1>убери <span>шесть</span> лишних предметов со стола ученика военных лет</h1>
+      <section class="hidden-object">
+        <div class="playfield">
+            <div>
+              <img src="../files/09/belka.png" alt='belka' onclick="addScore(this);" class="belka">
+              <img src="../files/09/burger_king.png" alt='burger_king' onclick="addScore(this);" class="burger_king">
+              <img src="../files/09/krem.png" alt='krem' onclick="addScore(this);" class="krem">
+              <img src="../files/09/nout.png" alt='nout' onclick="addScore(this);" class="nout">
+              <img src="../files/09/ochki.png" alt='ochki' onclick="addScore(this);" class="ochki">
+              <img src="../files/09/phone.png" alt='phone' onclick="addScore(this);" class="phone">
+            </div>
+        </div>
+      </section>
+    </article>
+    </main>
+    <footer>
+      <section class="container">
+        <a href="presentation/01.html">Главная</a>
+        <a href="presentation/8.html">Вернуться</a>
+        <a href="presentation/10.html">Дальше</a>
+      </section>
+    </footer>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+      var score = 0,
+          win = 6;
+
+      function addScore(obj){
+        score++;
+        if ( score >= win ) {
+          alert('Ура вы нашли все предметы');
+        }
+        $(obj).hide();
+      }
+    </script>
+  </body>
+</html>
