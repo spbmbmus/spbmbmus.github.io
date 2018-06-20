@@ -234,7 +234,7 @@ button[type=button]{
         &.fullframe{
           top:0;
           left:0;
-          width:100%;          
+          width:100%;
         }
         &.belka{
           top:0;
@@ -291,5 +291,9 @@ a.show_answer{
   cursor: pointer;
 }
 h2.show_answer,p.show_answer{
+  display:none;
+}
+
+.afisha-hidden{
   display:none;
 }

@@ -13,3 +13,8 @@ function showAnswer(obj){
   $(obj).hide();
   $('.'+answer_id).show();
 }
+
+function showAfisha(obj){
+  $('[id^='+obj.id+'-]').show();
+  $(obj).hide();
+}
