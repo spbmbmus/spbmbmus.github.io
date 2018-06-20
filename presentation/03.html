@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Презентация</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.gen.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
+  </head>
+  <body class="beige-back">
+    <main>
+    <article class="container">
+      <h1>Какие из предложенных мелодий, песен соответствуют скульптурным фрагментам?</h1>
+      <section class="carousel">
+        <div id="carousel">
+          <div><div class="carousel-item" style="background-image:url(../files/03/skulp1.jpg)"><div><span>1</span></div></div></div>
+          <div><div class="carousel-item" style="background-image:url(../files/03/skulp2.jpg)"><div><span>2</span></div></div></div>
+          <div><div class="carousel-item" style="background-image:url(../files/03/skulp3.jpg)"><div><span>3</span></div></div></div>
+          <div><div class="carousel-item" style="background-image:url(../files/03/skulp4.jpg)"><div><span>4</span></div></div></div>
+          <div><div class="carousel-item" style="background-image:url(../files/03/skulp5.jpg)"><div><span>5</span></div></div></div>
+          <div><div class="carousel-item" style="background-image:url(../files/03/skulp6.jpg)"><div><span>6</span></div></div></div>
+        </div>
+      </section>
+      <section class="music">
+        <div>
+          <audio src="../files/audio/fail2.mp3" controls></audio>
+          <p>1. «Им было всего лишь тринадцать»<br>муз. И. Шварц, сл. В. Кондратьев</p>
+        </div>
+        <div>
+          <audio src="../files/audio/fail3.mp3" controls></audio>
+          <p>2. «Вечер на рейде» («Любимый город»)<br>муз. В. Соловьев-Седой, сл. А.
+Чуркин</p>
+        </div>
+        <div>
+          <audio src="../files/audio/fail4.mp3" controls></audio>
+          <p>3. Из оперы «Катерина Измайлова»,<br>соч. 114, Д.Д. Шостакович</p>
+        </div>
+        <div>
+          <audio src="../files/audio/fail5.mp3" controls></audio>
+          <p>4. «Ой туманы мои, растуманы...»<br>муз. В. Захаров, сл. М. Исаковский</p>
+        </div>
+        <div>
+          <audio src="../files/audio/fail6.mp3" controls></audio>
+          <p>5. «Вот солдаты идут»<br>муз. К. Молчанов, сл. М. Львовский</p>
+        </div>
+        <div>
+          <audio src="../files/audio/fail7.mp3" controls></audio>
+          <p>6. «Первым делом...»<br>муз. В. Соловьев-Седой, сл. А. Фатьяно</p>
+        </div>
+      </section>
+    </article>
+    </main>
+    <footer>
+      <section class="container">
+        <a href="presentation/01.html">Главная</a>
+        <a href="presentation/02.html">Вернуться</a>
+        <a href="presentation/04.html">Дальше</a>
+      </section>
+    </footer>
+  </body>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script>
+    $('#carousel').slick({
+      arrows: true,
+      prevArrow:'<button type="button" class="carousel-prev"></button>',
+      nextArrow:'<button type="button" class="carousel-next"></button>',
+      dots:true,
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3
+    });
+  </script>
+</html>

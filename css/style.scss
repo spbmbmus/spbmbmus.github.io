@@ -1,22 +1,185 @@
+@function px-rem($pxsize) {
+    @return ($pxsize/16)+rem;
+}
+
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  src:url(../fonts/RossoOne.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Soviet';
+  font-style: normal;
+  font-weight: 400;
+  src:url(../fonts/soviet.ttf) format('truetype');
+}
+
+$sans-serif: -apple-system, BlinkMacSystemFont,
+             "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+             "Helvetica Neue", sans-serif;
+
+
+$color-orange:#f06649;
+$color-beige:#eadcac;
+$color-default:#502d16;
+
 * {
   margin:0;
   padding:0;
   box-sizing: border-box;
 }
 
+html{
+  font-family:$sans-serif;
+  color:$color-default;
+}
+
+.container{
+  max-width:px-rem(1024);
+  width:100%;
+}
+
+$footer-height:px-rem(50);
 body{
   min-height: 100vh;
-  height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
   display:flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
-  >svg{
-    height:100%;
+  >main{
+    padding-bottom:$footer-height;
+    >article{
+      display:flex;
+      flex-direction: column;
+    }
+    >svg{
+      height:100%;
+      .white-back{
+        fill:white;
+      }
+      text{
+        &.name{
+          font-size:px-rem(24);
+        }
+      }
+    }
   }
+  >footer{
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    bottom:0;
+    height:$footer-height;
+    background-color: rgba(0,0,0,.2);
+    width:100%;
+    >section{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.soviet{
+  font-family: 'Russo One';
+  text-transform: uppercase;
 }
 
 .button{
   cursor:pointer;
+}
+
+.orange-back{
+  background-color: $color-orange;
+}
+
+.beige-back{
+  background-color: $color-beige;
+}
+
+.carousel{
+  min-height: px-rem(350);
+  >div{
+  }
+}
+
+h1{
+  font-family: 'Russo One';
+  text-transform: uppercase;
+  background-color: white;
+  margin-top: px-rem(32);
+  margin-bottom: px-rem(32);
+  padding: px-rem(8) px-rem(32);
+}
+
+.carousel-item{
+  background-position: center;
+  background-size: cover;
+  background-color: gray;
+  width:px-rem(350);
+  margin:0 px-rem(4);
+  transition: all .4s ease-in 0s;
+  >div{
+    padding-top:100%;
+    position:relative;
+    span{
+      position:absolute;
+      left:px-rem(16);
+      bottom:px-rem(16);
+      background-color: white;
+      border-radius: 50%;
+      height:px-rem(24);
+      width:px-rem(24);
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.slick-slide{
+  display:flex !important;
+  justify-content: center;
+}
+
+
+.music{
+  height:30vh;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  >div{
+    padding:0 px-rem(8);
+    height:15vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    audio{
+      margin-bottom: px-rem(16);
+    }
+  }
+}
+
+$border: px-rem(4) solid $color-default;
+button[type=button]{
+  cursor: pointer;
+  position: absolute;
+  background:none;
+  border:none;
+  border-top: $border;
+  height:px-rem(25);
+  width:px-rem(25);
+  top:px-rem(150);
+  &.carousel-prev{
+    border-left: $border;
+    left:-(px-rem(30));
+    transform: rotate(-45deg);
+  }
+  &.carousel-next{
+    border-right: $border;
+    right:-(px-rem(30));
+    transform: rotate(45deg);
+  }
 }
