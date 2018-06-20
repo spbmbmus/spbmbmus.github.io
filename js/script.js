@@ -1,7 +1,6 @@
-var score = 0,
-    win = 6;
+var score = 0;
 
-function addScore(obj){
+function addScore(obj, win){
   score++;
   if ( score >= win ) {
     alert('Ура вы нашли все предметы');

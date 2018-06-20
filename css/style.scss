@@ -226,12 +226,16 @@ button[type=button]{
   .playfield{
     background-position: center;
     background-size: cover;
-    background-image: url(../files/09/stol2.jpg);
     >div{
       padding-top:67%;
       position: relative;
       >img{
         position:absolute;
+        &.fullframe{
+          top:0;
+          left:0;
+          width:100%;          
+        }
         &.belka{
           top:0;
           right:px-rem(150);

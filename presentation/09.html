@@ -12,14 +12,14 @@
     <article class="container">
       <h1>убери <span>шесть</span> лишних предметов со стола ученика военных лет</h1>
       <section class="hidden-object">
-        <div class="playfield">
+        <div class="playfield" style="background-image:url(../files/09/stol2.jpg)">
             <div>
-              <img src="../files/09/belka.png" alt='belka' onclick="addScore(this);" class="belka">
-              <img src="../files/09/burger_king.png" alt='burger_king' onclick="addScore(this);" class="burger_king">
-              <img src="../files/09/krem.png" alt='krem' onclick="addScore(this);" class="krem">
-              <img src="../files/09/nout.png" alt='nout' onclick="addScore(this);" class="nout">
-              <img src="../files/09/ochki.png" alt='ochki' onclick="addScore(this);" class="ochki">
-              <img src="../files/09/phone.png" alt='phone' onclick="addScore(this);" class="phone">
+              <img src="../files/09/belka.png" alt='belka' onclick="addScore(this, 6);" class="belka">
+              <img src="../files/09/burger_king.png" alt='burger_king' onclick="addScore(this, 6);" class="burger_king">
+              <img src="../files/09/krem.png" alt='krem' onclick="addScore(this, 6);" class="krem">
+              <img src="../files/09/nout.png" alt='nout' onclick="addScore(this, 6);" class="nout">
+              <img src="../files/09/ochki.png" alt='ochki' onclick="addScore(this, 6);" class="ochki">
+              <img src="../files/09/phone.png" alt='phone' onclick="addScore(this, 6);" class="phone">
             </div>
         </div>
       </section>
@@ -33,17 +33,6 @@
       </section>
     </footer>
     <script src="../js/jquery-3.3.1.min.js"></script>
-    <script>
-      var score = 0,
-          win = 6;
-
-      function addScore(obj){
-        score++;
-        if ( score >= win ) {
-          alert('Ура вы нашли все предметы');
-        }
-        $(obj).hide();
-      }
-    </script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
