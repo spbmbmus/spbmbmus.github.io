@@ -18,3 +18,7 @@ function showAfisha(obj){
   $('[id^='+obj.id+'-]').show();
   $(obj).hide();
 }
+
+function showArt(obj){
+  $('[id^='+obj.id+']').hide();
+}
