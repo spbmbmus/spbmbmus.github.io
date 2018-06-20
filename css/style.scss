@@ -24,6 +24,7 @@ $sans-serif: -apple-system, BlinkMacSystemFont,
 $color-orange:#f06649;
 $color-beige:#eadcac;
 $color-default:#502d16;
+$color-olive:#76773e;
 
 * {
   margin:0;
@@ -121,6 +122,9 @@ h1{
   margin-top: px-rem(32);
   margin-bottom: px-rem(32);
   padding: px-rem(8) px-rem(32);
+  span{
+    color:$color-olive;
+  }
 }
 
 .carousel-item{
@@ -296,4 +300,23 @@ h2.show_answer,p.show_answer{
 
 .afisha-hidden{
   display:none;
+}
+
+.shostakovich-image{
+  img{
+    width:100%;
+  }
+  margin-bottom: px-rem(32);
+}
+
+.shostakovich-audio{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height:px-rem(200);
+  >div{
+    margin-bottom: px-rem(16)
+  }
 }
