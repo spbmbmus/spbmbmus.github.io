@@ -200,3 +200,32 @@ button[type=button]{
   align-items: center;
   justify-content: space-between;
 }
+
+.text{
+  margin-bottom:px-rem(32);
+  display:flex;
+  >div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    &:nth-child(2){
+      align-items: center;
+      flex-grow: 1;
+      a{
+        padding:px-rem(4) px-rem(8);
+        background-color: white;
+        cursor: pointer;
+      }
+      h2,p{
+        display:none;
+      }
+    }
+  }
+  h2{
+    margin-bottom:px-rem(8);
+  }
+  p{
+    line-height:1.5;
+  }
+}

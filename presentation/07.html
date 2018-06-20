@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Презентация</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.gen.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
+  </head>
+  <body class="beige-back">
+    <main>
+    <article class="container">
+      <h1>Используя дословный перевод текстов (подстрочники) Ольги Берггольц и Юрия Воронова, создайте художественный перевод (слова можно заменять синонимами, можно менять формы слов), не нарушая общий смысл текстов</h1>
+      <section class="text">
+        <div>
+          <h2>Ольга Берггольц</h2>
+          <p>Чтобы дом светился и жил,<br>
+             Был наполнен спокойствием и весной...<br>
+             Тихо плачьте,мо, тихо смейтесь,<br>
+             Нужно радоваться тишине.</p>
+        </div>
+        <div>
+          <a onclick="showAnswer(this);" data-answer="answer1">Показать ответ</a>
+          <h2 class="answer1">Разговор с соседкой</h2>
+          <p class="answer answer1">
+            Пусть жилище светится и дышит,<br>
+            Полнится покоем и весной…<br>
+            Плачьте тише, смейтесь тише, тише,<br>
+            Будем наслаждаться тишиной.
+          </p>
+        </div>
+      </section>
+      <section class="text">
+        <div>
+          <h2>Юрий Воронов</h2>
+          <p>Чтобы согреться, мы сжигаем книги,<br>
+             Но сжигаем,<br>
+             Как будто мстим:<br>
+             Книги, которые не жалко, сжигаем целыми,<br>
+             У других только переплеты.<br>
+             Мы их переплетём заново,<br>
+             Когда повстречаем весну в апреле,<br>
+             А если не доживем,<br>
+             Вы будете вспоминать нас<br>
+             По этим книгам.</p>
+        </div>
+        <div>
+          <a onclick="showAnswer(this);" data-answer="answer2">Показать ответ</a>
+          <h2 class="answer2">Книги</h2>
+          <p class="answer answer2">
+            Мы, чтоб согреться, книги жжем.<br>
+            Но жжем их,<br>
+            Будто сводим счеты:<br>
+            Те, что не жалко, – целиком,<br>
+            У этих – <br>
+            Только переплеты.<br>
+            Мы их опять переплетем,<br>
+            Когда весну в апреле встретим.<br>
+            А не придется – <br>
+            Вы потом<br>
+            Нас вспомните<br>
+            По книгам этим.
+          </p>
+        </div>
+      </section>
+    </article>
+    </main>
+    <footer>
+      <section class="container">
+        <a href="presentation/01.html">Главная</a>
+        <a href="presentation/06.html">Вернуться</a>
+        <a href="presentation/08.html">Дальше</a>
+      </section>
+    </footer>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+      function showAnswer(obj){
+        var answer_id = $(obj).data('answer');
+        $(obj).hide();
+        $('.'+answer_id).show();
+      }
+    </script>
+  </body>
+</html>
