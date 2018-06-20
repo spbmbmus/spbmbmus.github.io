@@ -212,14 +212,6 @@ button[type=button]{
     &:nth-child(2){
       align-items: center;
       flex-grow: 1;
-      a{
-        padding:px-rem(4) px-rem(8);
-        background-color: white;
-        cursor: pointer;
-      }
-      h2,p{
-        display:none;
-      }
     }
   }
   h2{
@@ -273,4 +265,27 @@ button[type=button]{
       }
     }
   }
+}
+
+.hidden-text{
+  div{
+    img{
+      display:block;
+      width:100%;
+    }
+    &:nth-child(2){
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+a.show_answer{
+  padding:px-rem(4) px-rem(8);
+  background-color: white;
+  cursor: pointer;
+}
+h2.show_answer,p.show_answer{
+  display:none;
 }

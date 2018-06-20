@@ -20,9 +20,9 @@
              Нужно радоваться тишине.</p>
         </div>
         <div>
-          <a onclick="showAnswer(this);" data-answer="answer1">Показать ответ</a>
-          <h2 class="answer1">Разговор с соседкой</h2>
-          <p class="answer answer1">
+          <a class="show_answer" onclick="showAnswer(this);" data-answer="answer1">Показать ответ</a>
+          <h2 class="answer1 show_answer">Разговор с соседкой</h2>
+          <p class="answer answer1 show_answer">
             Пусть жилище светится и дышит,<br>
             Полнится покоем и весной…<br>
             Плачьте тише, смейтесь тише, тише,<br>
@@ -45,9 +45,9 @@
              По этим книгам.</p>
         </div>
         <div>
-          <a onclick="showAnswer(this);" data-answer="answer2">Показать ответ</a>
-          <h2 class="answer2">Книги</h2>
-          <p class="answer answer2">
+          <a CLASS="show_answer" onclick="showAnswer(this);" data-answer="answer2">Показать ответ</a>
+          <h2 class="answer2 show_answer">Книги</h2>
+          <p class="answer show_answer answer2">
             Мы, чтоб согреться, книги жжем.<br>
             Но жжем их,<br>
             Будто сводим счеты:<br>
@@ -73,12 +73,6 @@
       </section>
     </footer>
     <script src="../js/jquery-3.3.1.min.js"></script>
-    <script>
-      function showAnswer(obj){
-        var answer_id = $(obj).data('answer');
-        $(obj).hide();
-        $('.'+answer_id).show();
-      }
-    </script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
