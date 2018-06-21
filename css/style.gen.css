@@ -1,0 +1,399 @@
+@font-face {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/RossoOne.woff2) format("woff2"); }
+@font-face {
+  font-family: 'Soviet';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/soviet.ttf) format("truetype"); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #502d16; }
+
+.container {
+  max-width: 64rem;
+  width: 100%; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: top;
+  justify-content: center; }
+  body > main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3.125rem;
+    width: 100%;
+    align-items: center; }
+    body > main > article {
+      padding-top: 2rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column; }
+    body > main > svg {
+      height: 100%; }
+      body > main > svg .white-back {
+        fill: white; }
+      body > main > svg text.name {
+        font-size: 1.5rem; }
+  body > footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    height: 3.125rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%; }
+    body > footer > section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      body > footer > section a {
+        font-family: "Russo One";
+        color: #502d16; }
+        body > footer > section a:hover {
+          opacity: .8; }
+
+.soviet {
+  font-family: "Russo One";
+  text-transform: uppercase; }
+
+.button {
+  cursor: pointer; }
+
+.orange-back {
+  background-color: #f06649; }
+
+.beige-back {
+  background-color: #eadcac; }
+
+.olive-back {
+  background-color: #76773e; }
+
+.peach-back {
+  background-color: #e9b277; }
+
+.carousel {
+  min-height: 21.875rem; }
+
+h1 {
+  font-family: "Russo One";
+  text-transform: uppercase;
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 0.5rem 2rem; }
+  h1 span {
+    color: #76773e; }
+
+h2 {
+  margin-bottom: 0.5rem; }
+
+p {
+  line-height: 1.5; }
+
+.carousel-item {
+  background-position: center;
+  background-size: cover;
+  background-color: gray;
+  width: 21.875rem;
+  margin: 0 0.25rem;
+  transition: all .4s ease-in 0s; }
+  .carousel-item > div {
+    padding-top: 100%;
+    position: relative; }
+    .carousel-item > div span {
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem;
+      background-color: white;
+      border-radius: 50%;
+      height: 1.5rem;
+      width: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center; }
+
+.music {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .music > div {
+    padding: 0 0.5rem;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .music > div audio {
+      margin-bottom: 1rem; }
+
+button[type=button] {
+  cursor: pointer;
+  position: absolute;
+  background: none;
+  border: none;
+  border-top: 0.25rem solid #502d16;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  top: 9.375rem; }
+  button[type=button].carousel-prev {
+    border-left: 0.25rem solid #502d16;
+    left: -1.875rem;
+    transform: rotate(-45deg); }
+  button[type=button].carousel-next {
+    border-right: 0.25rem solid #502d16;
+    right: -1.875rem;
+    transform: rotate(45deg); }
+
+.images-inline {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.text {
+  margin-bottom: 2rem;
+  display: flex; }
+  .text > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+    .text > div:nth-child(2) {
+      align-items: center;
+      flex-grow: 1; }
+
+.hidden-object .playfield {
+  background-position: center;
+  background-size: cover; }
+  .hidden-object .playfield > div {
+    padding-top: 67%;
+    position: relative; }
+    .hidden-object .playfield > div > img {
+      position: absolute; }
+      .hidden-object .playfield > div > img.fullframe {
+        top: 0;
+        left: 0;
+        width: 100%; }
+      .hidden-object .playfield > div > img.belka {
+        top: 0;
+        right: 9.375rem;
+        width: 9.375rem; }
+      .hidden-object .playfield > div > img.burger_king {
+        top: 29.375rem;
+        left: 26.25rem;
+        width: 3.75rem; }
+      .hidden-object .playfield > div > img.nout {
+        top: 23.125rem;
+        left: 11.25rem;
+        width: 16.875rem; }
+      .hidden-object .playfield > div > img.phone {
+        top: 27.8125rem;
+        left: 31.25rem;
+        width: 8.125rem; }
+      .hidden-object .playfield > div > img.ochki {
+        top: 26.875rem;
+        left: 43.125rem;
+        width: 4.375rem; }
+      .hidden-object .playfield > div > img.krem {
+        bottom: 1.25rem;
+        right: 5.625rem;
+        width: 5.625rem; }
+
+.hidden-text div img {
+  display: block;
+  width: 100%; }
+.hidden-text div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+a.show_answer {
+  padding: 0.25rem 0.5rem;
+  background-color: white;
+  cursor: pointer; }
+
+h2.show_answer, p.show_answer {
+  display: none; }
+
+.afisha-hidden {
+  display: none; }
+
+.shostakovich-image {
+  margin-bottom: 2rem; }
+  .shostakovich-image img {
+    width: 100%; }
+
+.shostakovich-audio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 12.5rem; }
+  .shostakovich-audio > div {
+    margin-bottom: 1rem; }
+
+.bonus-1 {
+  margin-bottom: 2rem; }
+  .bonus-1 > div {
+    height: 9.375rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .bonus-1 > div > p {
+      display: flex;
+      margin-top: 0.5rem; }
+      .bonus-1 > div > p span {
+        display: block;
+        width: 5.625rem; }
+
+.bonus-1-cards {
+  display: flex; }
+  .bonus-1-cards .row {
+    display: flex;
+    margin-bottom: 1rem; }
+  .bonus-1-cards .card {
+    margin-right: 0.5rem; }
+    .bonus-1-cards .card div {
+      border: 0.125rem solid white;
+      width: 3.125rem;
+      height: 1.875rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .bonus-1-cards .card div:first-child {
+        background-color: white; }
+      .bonus-1-cards .card div:last-child {
+        color: #eadcac;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        text-transform: uppercase; }
+
+.skulpts {
+  display: flex; }
+  .skulpts > div {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .skulpts > div img {
+      margin-bottom: 2rem;
+      height: 25rem; }
+
+.lastnames img {
+  width: 100%; }
+.lastnames div:first-child {
+  margin-bottom: 2rem; }
+.lastnames div:last-child {
+  display: flex;
+  justify-content: center; }
+  .lastnames div:last-child img {
+    width: 70%;
+    margin-right: 2rem; }
+  .lastnames div:last-child a {
+    align-self: flex-end; }
+
+.words h2 {
+  font-family: "Russo One";
+  margin-bottom: 1rem;
+  font-size: 1.125rem; }
+.words p {
+  margin-bottom: 4rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  color: white; }
+
+.bears {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .bears > div.image {
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-around; }
+    .bears > div.image img {
+      height: 28.75rem; }
+    .bears > div.image p {
+      width: 18.75rem;
+      background-color: white;
+      padding: 1.875rem;
+      text-transform: uppercase;
+      font-family: "Russo One";
+      align-self: flex-start; }
+  .bears > div.pages {
+    border-top: 0.375rem solid white;
+    align-self: center;
+    display: flex;
+    position: relative; }
+    .bears > div.pages > div {
+      margin-top: -1.6875rem;
+      display: flex; }
+      .bears > div.pages > div > div {
+        height: 3rem;
+        width: 3rem;
+        background-color: #e9b277;
+        border: 0.375rem solid #e9b277;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.25rem;
+        margin: 0 0.5rem; }
+        .bears > div.pages > div > div:first-child {
+          margin-left: 0; }
+        .bears > div.pages > div > div:last-child {
+          margin-right: 0; }
+        .bears > div.pages > div > div.active {
+          border-color: white; }
+
+.questgiver > header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .questgiver > header p {
+    font-family: "Russo One";
+    background-color: white;
+    padding: 0.25rem;
+    font-size: 1.5rem;
+    padding-right: 1rem; }
+.questgiver > main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .questgiver > main > .words {
+    margin-left: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end; }
+    .questgiver > main > .words div {
+      border-top: 1.875rem solid white;
+      border-left: 1.875rem solid transparent; }
+    .questgiver > main > .words p {
+      width: 25rem;
+      padding: 1.875rem;
+      font-family: "Russo One";
+      background-color: white;
+      color: #444;
+      font-size: 1.125rem;
+      margin-bottom: 0; }
+
+/*# sourceMappingURL=style.gen.css.map */
