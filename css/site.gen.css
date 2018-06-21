@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #1e2d3b;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto; }
+
+.container {
+  max-width: 64rem;
+  width: 100%;
+  margin: 0 auto; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+  body > header {
+    padding: 0.5rem 0;
+    background-color: #1e2d3b; }
+    body > header .logo {
+      color: #EDCD1F;
+      display: flex;
+      align-items: center; }
+      body > header .logo p:first-child {
+        text-transform: uppercase;
+        font-size: 0.5rem; }
+      body > header .logo p:last-child {
+        font-size: 1.5rem; }
+  body > main {
+    flex-grow: 1; }
+
+h1 {
+  text-transform: uppercase;
+  padding: 2rem 1rem;
+  font-size: 3.75rem;
+  font-weight: 400;
+  width: 100%;
+  max-width: 38.75rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.about, .title {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../files/01/back.jpg); }
+
+.title {
+  padding: 7.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ccc;
+  background-blend-mode: overlay; }
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: 400;
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 1rem; }
+  h2 + div {
+    display: block;
+    height: 0.625rem;
+    width: 7.25rem;
+    margin: 0 auto;
+    background-color: #EDCD1F;
+    margin-bottom: 2rem; }
+
+.actions {
+  padding: 2rem;
+  padding-bottom: 4rem; }
+  .actions .cards {
+    display: flex;
+    justify-content: space-between; }
+    .actions .cards a {
+      color: #1e2d3b;
+      text-decoration: none; }
+    .actions .cards article {
+      max-width: 18.75rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .actions .cards article > header {
+        background-position: center;
+        background-size: cover;
+        background-color: #eee; }
+        .actions .cards article > header div {
+          padding-top: 56.5%; }
+      .actions .cards article > main {
+        flex-grow: 1;
+        background-color: #eee;
+        padding: 1rem;
+        padding-bottom: 2rem; }
+        .actions .cards article > main h3 {
+          font-weight: 400;
+          text-transform: uppercase;
+          margin-bottom: 1rem;
+          color: #3D5975; }
+
+.about > div {
+  width: 50%;
+  background-color: #eee; }
+  .about > div > div {
+    margin-left: auto;
+    width: 50%;
+    padding: 2rem; }
+  .about > div p {
+    line-height: 1.7; }
+
+.contacts {
+  padding: 2rem; }
+
+/*# sourceMappingURL=site.gen.css.map */
