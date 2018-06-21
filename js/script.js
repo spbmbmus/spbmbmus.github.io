@@ -27,3 +27,8 @@ function showCards(obj){
   $('.card div:last-child').css('color','#502d16');
   $(obj).hide();
 }
+
+function showImage(obj, url){
+  $('.img_answer').attr('src',url);
+  $(obj).hide();
+}

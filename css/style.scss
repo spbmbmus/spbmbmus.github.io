@@ -383,3 +383,16 @@ h2.show_answer,p.show_answer{
     }
   }
 }
+
+.lastnames{
+  img{
+    width:100%;
+  }
+  div:first-child{
+    margin-bottom:px-rem(32);
+  }
+  div:last-child{
+    display:flex;
+    justify-content: center;
+  }
+}
