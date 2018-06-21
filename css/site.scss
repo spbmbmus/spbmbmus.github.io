@@ -116,7 +116,7 @@ h2{
           background-size: cover;
           background-color:#eee;
           div{
-            padding-top:56.5%;
+            padding-top:67%;
           }
         }
         >main{
@@ -148,10 +148,43 @@ h2{
     }
     p{
       line-height: 1.7;
+      padding-bottom: px-rem(120);
     }
   }
 }
 
 .contacts{
   padding:px-rem(32);
+}
+
+form{
+  padding: px-rem(32) 0;
+  display:flex;
+  flex-direction: column;
+  width:px-rem(500);
+  margin: 0 auto;
+  >div{
+    display:flex;
+    justify-content: space-between;
+    input{
+      width:px-rem(240);
+    }
+  }
+  input{
+    width:100%;
+    margin-bottom:px-rem(16);
+    background: none;
+    border: px-rem(1) solid #ddd;
+    padding:px-rem(8) px-rem(16);
+    transition: all .2s ease-in 0s;
+    &:focus{
+      border-color:#bbb;
+    }
+    &[type=submit]{
+      cursor: pointer;
+      &:hover{
+        background-color: #ddd;
+      }
+    }
+  }
 }

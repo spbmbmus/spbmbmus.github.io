@@ -91,7 +91,7 @@ h2 {
         background-size: cover;
         background-color: #eee; }
         .actions .cards article > header div {
-          padding-top: 56.5%; }
+          padding-top: 67%; }
       .actions .cards article > main {
         flex-grow: 1;
         background-color: #eee;
@@ -111,9 +111,35 @@ h2 {
     width: 50%;
     padding: 2rem; }
   .about > div p {
-    line-height: 1.7; }
+    line-height: 1.7;
+    padding-bottom: 7.5rem; }
 
 .contacts {
   padding: 2rem; }
+
+form {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 31.25rem;
+  margin: 0 auto; }
+  form > div {
+    display: flex;
+    justify-content: space-between; }
+    form > div input {
+      width: 15rem; }
+  form input {
+    width: 100%;
+    margin-bottom: 1rem;
+    background: none;
+    border: 0.0625rem solid #ddd;
+    padding: 0.5rem 1rem;
+    transition: all .2s ease-in 0s; }
+    form input:focus {
+      border-color: #bbb; }
+    form input[type=submit] {
+      cursor: pointer; }
+      form input[type=submit]:hover {
+        background-color: #ddd; }
 
 /*# sourceMappingURL=site.gen.css.map */
