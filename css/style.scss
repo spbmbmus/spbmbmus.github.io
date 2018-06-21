@@ -38,6 +38,10 @@ $color-peach:#e9b277;
 html{
   font-family:$sans-serif;
   color:$color-default;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .container{
@@ -427,9 +431,6 @@ h2.show_answer,p.show_answer{
     margin-bottom: px-rem(64);
     padding: px-rem(16);
     font-size:px-rem(24);
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
     color:white;
   }
 
@@ -528,6 +529,28 @@ h2.show_answer,p.show_answer{
         font-size: px-rem(18);
         margin-bottom:0;
       }
+    }
+  }
+}
+
+$candy-height:px-rem(350);
+.bonus{
+  display:flex;
+  flex-direction: row;
+  >section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: px-rem(32);
+    img,p{
+      height: $candy-height;
+    }
+    p{
+      background-color: white;
+      padding:px-rem(30);
+      font-family: $title-font;
+      font-size: px-rem(20);
     }
   }
 }

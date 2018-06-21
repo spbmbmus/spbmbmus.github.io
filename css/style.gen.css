@@ -15,7 +15,10 @@
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  color: #502d16; }
+  color: #502d16;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto; }
 
 .container {
   max-width: 64rem;
@@ -315,9 +318,6 @@ h2.show_answer, p.show_answer {
   margin-bottom: 4rem;
   padding: 1rem;
   font-size: 1.5rem;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
   color: white; }
 
 .bears {
@@ -395,5 +395,22 @@ h2.show_answer, p.show_answer {
       color: #444;
       font-size: 1.125rem;
       margin-bottom: 0; }
+
+.bonus {
+  display: flex;
+  flex-direction: row; }
+  .bonus > section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 2rem; }
+    .bonus > section img, .bonus > section p {
+      height: 21.875rem; }
+    .bonus > section p {
+      background-color: white;
+      padding: 1.875rem;
+      font-family: "Russo One";
+      font-size: 1.25rem; }
 
 /*# sourceMappingURL=style.gen.css.map */
