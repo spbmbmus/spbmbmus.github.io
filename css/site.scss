@@ -12,6 +12,10 @@ $sans-serif: -apple-system, BlinkMacSystemFont,
  box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 $color-default:rgba(30, 45, 59, 1);
 $color-yellow:#EDCD1F;
 
@@ -92,13 +96,13 @@ h2{
     width:px-rem(116);
     margin:0 auto;
     background-color: $color-yellow;
-    margin-bottom: px-rem(32);
+    margin-bottom: px-rem(64);
   }
 }
 
 .actions{
-  padding:px-rem(32);
-  padding-bottom: px-rem(64);
+  padding:px-rem(64);
+  padding-bottom: px-rem(128);
   .cards{
     display:flex;
     justify-content: space-between;
@@ -107,8 +111,9 @@ h2{
       text-decoration: none;
     }
     article{
-        max-width: px-rem(300);
+        max-width: px-rem(260);
         width:100%;
+        height:100%;
         display:flex;
         flex-direction: column;
         >header{
@@ -145,6 +150,7 @@ h2{
       margin-left: auto;
       width:50%;
       padding:px-rem(32);
+      padding-top:px-rem(64);
     }
     p{
       line-height: 1.7;
@@ -155,14 +161,19 @@ h2{
 
 .contacts{
   padding:px-rem(32);
+  padding-top:px-rem(64);
 }
 
 form{
-  padding: px-rem(32) 0;
+  padding: px-rem(64) 0;
   display:flex;
   flex-direction: column;
   width:px-rem(500);
   margin: 0 auto;
+  p{
+    line-height: 1.7;
+    margin-bottom:px-rem(32);
+  }
   >div{
     display:flex;
     justify-content: space-between;
