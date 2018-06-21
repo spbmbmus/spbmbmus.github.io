@@ -491,3 +491,42 @@ h2.show_answer,p.show_answer{
     }
   }
 }
+
+.questgiver{
+  >header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    p{
+      font-family: $title-font;
+      background-color: white;
+      padding:px-rem(4);
+      font-size: px-rem(24);
+      padding-right:px-rem(8);
+    }
+  }
+  >main{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >.words{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      div{
+        border-top:px-rem(30) solid white;
+        border-left: px-rem(30) solid transparent;
+      }
+      p{
+        width:px-rem(400);
+        padding:px-rem(30);
+        font-family: $title-font;
+        background-color: white;
+        color:#444;
+        font-size: px-rem(18);
+        margin-bottom:0;
+      }
+    }
+  }
+}
