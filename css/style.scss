@@ -394,5 +394,12 @@ h2.show_answer,p.show_answer{
   div:last-child{
     display:flex;
     justify-content: center;
+    img{
+      width:70%;
+      margin-right: px-rem(32);
+    }
+    a{
+      align-self: flex-end;
+    }
   }
 }
