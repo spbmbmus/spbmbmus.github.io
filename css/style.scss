@@ -127,6 +127,14 @@ h1{
   }
 }
 
+
+h2{
+  margin-bottom:px-rem(8);
+}
+p{
+  line-height:1.5;
+}
+
 .carousel-item{
   background-position: center;
   background-size: cover;
@@ -217,12 +225,6 @@ button[type=button]{
       align-items: center;
       flex-grow: 1;
     }
-  }
-  h2{
-    margin-bottom:px-rem(8);
-  }
-  p{
-    line-height:1.5;
   }
 }
 
@@ -364,6 +366,20 @@ h2.show_answer,p.show_answer{
         user-select: none;
         text-transform: uppercase;
       }
+    }
+  }
+}
+
+.skulpts{
+  display:flex;
+  >div{
+    padding: 0 px-rem(16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+      margin-bottom:px-rem(32);
+      height:px-rem(400);
     }
   }
 }
