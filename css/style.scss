@@ -554,3 +554,16 @@ $candy-height:px-rem(350);
     }
   }
 }
+
+.main{
+  svg{
+    path,circle{
+      fill:white;
+      opacity: .5;
+      transition: all .2s ease-in 0s;
+      &:hover{
+        opacity: 0;
+      }
+    }
+  }
+}

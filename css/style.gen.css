@@ -413,4 +413,11 @@ h2.show_answer, p.show_answer {
       font-family: "Russo One";
       font-size: 1.25rem; }
 
+.main svg path, .main svg circle {
+  fill: white;
+  opacity: .5;
+  transition: all .2s ease-in 0s; }
+  .main svg path:hover, .main svg circle:hover {
+    opacity: 0; }
+
 /*# sourceMappingURL=style.gen.css.map */
