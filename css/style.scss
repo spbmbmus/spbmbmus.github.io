@@ -92,9 +92,10 @@ body{
 
 .image-row{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   >img{
-    height:px-rem(300);
+    display:block;
+    height:px-rem(320);
   }
 }
 
