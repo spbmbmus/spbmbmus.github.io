@@ -1,13 +1,4 @@
-@font-face {
-  font-family: "Russo One";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/RossoOne.woff2) format("woff2"); }
-@font-face {
-  font-family: 'Soviet';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/soviet.ttf) format("truetype"); }
+@import url("https://fonts.googleapis.com/css?family=Russo+One&subset=cyrillic");
 * {
   margin: 0;
   padding: 0;
@@ -59,13 +50,16 @@ body {
       align-items: center;
       justify-content: space-between; }
       body > footer > section a {
-        font-family: "Russo One";
+        font-family: "Russo One", sans-serif;
         color: #502d16; }
         body > footer > section a:hover {
           opacity: .8; }
 
+.about p {
+  margin-bottom: 2rem; }
+
 .soviet {
-  font-family: "Russo One";
+  font-family: "Russo One", sans-serif;
   text-transform: uppercase; }
 
 .button {
@@ -87,7 +81,7 @@ body {
   min-height: 21.875rem; }
 
 h1 {
-  font-family: "Russo One";
+  font-family: "Russo One", sans-serif;
   text-transform: uppercase;
   background-color: white;
   margin-bottom: 2rem;
@@ -311,7 +305,7 @@ h2.show_answer, p.show_answer {
     align-self: flex-end; }
 
 .words h2 {
-  font-family: "Russo One";
+  font-family: "Russo One", sans-serif;
   margin-bottom: 1rem;
   font-size: 1.125rem; }
 .words p {
@@ -335,7 +329,7 @@ h2.show_answer, p.show_answer {
       background-color: white;
       padding: 1.875rem;
       text-transform: uppercase;
-      font-family: "Russo One";
+      font-family: "Russo One", sans-serif;
       align-self: flex-start; }
   .bears > div.pages {
     border-top: 0.375rem solid white;
@@ -369,7 +363,7 @@ h2.show_answer, p.show_answer {
   flex-direction: column;
   align-items: flex-start; }
   .questgiver > header p {
-    font-family: "Russo One";
+    font-family: "Russo One", sans-serif;
     background-color: white;
     padding: 0.25rem;
     font-size: 1.5rem;
@@ -390,7 +384,7 @@ h2.show_answer, p.show_answer {
     .questgiver > main > .words p {
       width: 25rem;
       padding: 1.875rem;
-      font-family: "Russo One";
+      font-family: "Russo One", sans-serif;
       background-color: white;
       color: #444;
       font-size: 1.125rem;
@@ -410,7 +404,7 @@ h2.show_answer, p.show_answer {
     .bonus > section p {
       background-color: white;
       padding: 1.875rem;
-      font-family: "Russo One";
+      font-family: "Russo One", sans-serif;
       font-size: 1.25rem; }
 
 .main svg path, .main svg circle {

@@ -1,22 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One&subset=cyrillic');
+
 @function px-rem($pxsize) {
     @return ($pxsize/16)+rem;
 }
 
-$title-font: 'Russo One';
-
-@font-face {
-  font-family: $title-font;
-  font-style: normal;
-  font-weight: 400;
-  src:url(../fonts/RossoOne.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'Soviet';
-  font-style: normal;
-  font-weight: 400;
-  src:url(../fonts/soviet.ttf) format('truetype');
-}
+$title-font: 'Russo One', sans-serif;;
 
 $sans-serif: -apple-system, BlinkMacSystemFont,
              "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
@@ -99,6 +87,12 @@ body{
         }
       }
     }
+  }
+}
+
+.about{
+  p{
+    margin-bottom: px-rem(32);
   }
 }
 
