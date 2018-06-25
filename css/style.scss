@@ -93,9 +93,10 @@ body{
 .image-row{
   display: flex;
   justify-content: center;
+  align-items: center;
   >img{
+    height:px-rem(400);
     display:block;
-    height:px-rem(320);
   }
 }
 

@@ -57,10 +57,11 @@ body {
 
 .image-row {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   .image-row > img {
-    display: block;
-    height: 20rem; }
+    height: 25rem;
+    display: block; }
 
 .about p {
   margin-bottom: 2rem; }
