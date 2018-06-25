@@ -55,6 +55,12 @@ body {
         body > footer > section a:hover {
           opacity: .8; }
 
+.image-row {
+  display: flex;
+  justify-content: space-around; }
+  .image-row > img {
+    height: 18.75rem; }
+
 .about p {
   margin-bottom: 2rem; }
 

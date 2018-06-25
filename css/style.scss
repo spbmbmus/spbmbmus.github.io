@@ -90,6 +90,14 @@ body{
   }
 }
 
+.image-row{
+  display: flex;
+  justify-content: space-around;
+  >img{
+    height:px-rem(300);
+  }
+}
+
 .about{
   p{
     margin-bottom: px-rem(32);
