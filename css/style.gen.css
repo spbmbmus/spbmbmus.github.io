@@ -381,6 +381,8 @@ h2.show_answer, p.show_answer {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .questgiver > main img {
+    height: 25rem; }
   .questgiver > main > .words {
     margin-left: 2rem;
     display: flex;

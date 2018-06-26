@@ -515,6 +515,9 @@ h2.show_answer,p.show_answer{
     display: flex;
     align-items: center;
     justify-content: center;
+    img{
+      height:px-rem(400);
+    }
     >.words{
       margin-left: px-rem(32);
       display: flex;
