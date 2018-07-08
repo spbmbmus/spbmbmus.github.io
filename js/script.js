@@ -3,7 +3,7 @@ var score = 0;
 function addScore(obj, win){
   score++;
   if ( score >= win ) {
-    alert('Ура вы нашли все предметы');
+    alert('Ура! Вы нашли все предметы!');
   }
   $(obj).hide();
 }
