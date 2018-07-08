@@ -574,3 +574,14 @@ $candy-height:px-rem(350);
     }
   }
 }
+
+table.dates{
+  td,th{
+    padding:px-rem(8);
+    text-align: center;
+    background-color: white;
+  }
+  th{
+    padding:px-rem(16);
+  }
+}

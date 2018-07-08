@@ -424,4 +424,11 @@ h2.show_answer, p.show_answer {
   .main svg path:hover, .main svg circle:hover {
     opacity: 0; }
 
+table.dates td, table.dates th {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: white; }
+table.dates th {
+  padding: 1rem; }
+
 /*# sourceMappingURL=style.gen.css.map */
