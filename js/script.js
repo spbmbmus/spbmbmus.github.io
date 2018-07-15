@@ -32,3 +32,10 @@ function showImage(obj, url){
   $('.img_answer').attr('src',url);
   $(obj).hide();
 }
+
+function showPart(obj, page_number){
+  var image_url = "../files/013/"+obj.id+".png"
+  console.log(image_url);
+  //$('.image-grid > div > div').css('');
+  obj.style.backgroundImage = "url("+image_url+")";
+}

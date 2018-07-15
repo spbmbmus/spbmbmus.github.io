@@ -585,3 +585,29 @@ table.dates{
     padding:px-rem(16);
   }
 }
+
+.image-grid{
+  display:grid;
+  margin:px-rem(16) auto;
+  >div{
+    div{
+      display:block;
+      padding-top:100%;
+      background-position: center;
+      background-size: cover;
+      background-color: $color-olive;
+      cursor:pointer;
+      &:hover{
+        background-color:lighten($color-olive, 10%);
+      }
+    }
+  }
+  &.grid-6{
+    width:50%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &.grid-12{
+    width:100%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

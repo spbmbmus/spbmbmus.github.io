@@ -431,4 +431,23 @@ table.dates td, table.dates th {
 table.dates th {
   padding: 1rem; }
 
+.image-grid {
+  display: grid;
+  margin: 1rem auto; }
+  .image-grid > div div {
+    display: block;
+    padding-top: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: #76773e;
+    cursor: pointer; }
+    .image-grid > div div:hover {
+      background-color: #97994f; }
+  .image-grid.grid-6 {
+    width: 50%;
+    grid-template-columns: repeat(2, 1fr); }
+  .image-grid.grid-12 {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr); }
+
 /*# sourceMappingURL=style.gen.css.map */
