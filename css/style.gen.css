@@ -74,16 +74,16 @@ body {
   cursor: pointer; }
 
 .orange-back {
-  background-color: #f06649; }
+  background-color: #F0936C; }
 
 .beige-back {
   background-color: #eadcac; }
 
 .olive-back {
-  background-color: #76773e; }
+  background-color: #777645; }
 
 .peach-back {
-  background-color: #e9b277; }
+  background-color: #E9D1B1; }
 
 .carousel {
   min-height: 21.875rem; }
@@ -95,7 +95,7 @@ h1 {
   margin-bottom: 2rem;
   padding: 0.5rem 2rem; }
   h1 span {
-    color: #76773e; }
+    color: #777645; }
 
 h2 {
   margin-bottom: 0.5rem; }
@@ -350,8 +350,8 @@ h2.show_answer, p.show_answer {
       .bears > div.pages > div > div {
         height: 3rem;
         width: 3rem;
-        background-color: #e9b277;
-        border: 0.375rem solid #e9b277;
+        background-color: #E9D1B1;
+        border: 0.375rem solid #E9D1B1;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -439,10 +439,10 @@ table.dates th {
     padding-top: 100%;
     background-position: center;
     background-size: cover;
-    background-color: #76773e;
+    background-color: #777645;
     cursor: pointer; }
     .image-grid > div div:hover {
-      background-color: #97994f; }
+      background-color: #979658; }
   .image-grid.grid-6 {
     width: 50%;
     grid-template-columns: repeat(2, 1fr); }
