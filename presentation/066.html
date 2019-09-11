@@ -16,16 +16,24 @@
 <section class="about">
   <p>Ответы на здание указывайте в <a href="https://goo.gl/forms/zBFa8d5F95Q8TuUv1" target="_blank">форме ответа</a></p>
 </section>
+<section class="carousel">
+
+<div id="carousel">
+  <div><div class="carousel-item" style="background-image:url(../files/25/page25.png); background-size:contain; background-repeat: no-repeat;"><div><span>1</span></div></div></div>
+  <div><div class="carousel-item" style="background-image:url(../files/25/page25_2.png); background-size:contain; background-repeat: no-repeat;"><div><span>2</span></div></div></div>
+  <div><div class="carousel-item" style="background-image:url(../files/25/page25_3.png); background-size:contain; background-repeat: no-repeat;"><div><span>3</span></div></div></div>
+</div>
+</section>
+
       <section class="skulpts">
         <div>
-          <img src="../files/25/page25.png">
-          <h2>Михаил Звягин</h2>
+                  <h2>Михаил Звягин</h2>
           <p>В работах, выполненных этим скульптором, ощущается щемящая боль, горечь, отчаяние и безысходность.
             Наблюдается изломанность, дисгармоничность линий, а некоторая уродливость изображаемого связана
             с уродливостью, ненормальностью всего происходящего в годы блокады.</p>
         </div>
         <div>
-          <img src="../files/25/page25_2.png">
+
           <h2>Виктор Зайко</h2>
           <p>Основная тема работ: блокада, скорбь, грусть. Несмотря на печальный
             характер скульптур, наблюдается мягкость линий, плавность, обтекаемость,
@@ -34,7 +42,7 @@
             в душе у созерцателей возникает ощущение тепла.</p>
         </div>
         <div>
-          <img src="../files/25/page25_3.png">
+
           <h2>Виктор Бажинов</h2>
           <p>Основная тема скульптур: люди, сюжеты из военной жизни, военная разруха.
             Работы очень натуралистичны, реалистичны – отражают всё, что увидел и пережил автор, который мальчишкой воевал в партизанском отряде.
@@ -53,5 +61,17 @@
     </footer>
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script>
+      $('#carousel').slick({
+        arrows: true,
+        prevArrow:'<button type="button" class="carousel-prev"></button>',
+        nextArrow:'<button type="button" class="carousel-next"></button>',
+        dots:true,
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3
+      });
+    </script>
   </body>
 </html>
