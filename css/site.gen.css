@@ -78,13 +78,12 @@ h2 {
   padding: 4rem;
   padding-bottom: 8rem; }
   .actions .cards {
-    display: flex;
-    justify-content: space-between; }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
     .actions .cards a {
       color: #1e2d3b;
       text-decoration: none; }
     .actions .cards article {
-      max-width: 16.25rem;
       width: 100%;
       height: 100%;
       display: flex;
