@@ -149,4 +149,9 @@ form {
       form input[type=submit]:hover {
         background-color: #ddd; }
 
+.yandex-form-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0.5rem; }
+
 /*# sourceMappingURL=site.gen.css.map */

@@ -197,3 +197,9 @@ form{
     }
   }
 }
+
+.yandex-form-container{
+  display: flex;
+  justify-content: center;
+  padding: px-rem(32) px-rem(8);
+}
