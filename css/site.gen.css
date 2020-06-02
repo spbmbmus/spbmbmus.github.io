@@ -149,9 +149,17 @@ form {
       form input[type=submit]:hover {
         background-color: #ddd; }
 
+.yandex-form-title {
+  min-height: 30vh; }
+
 .yandex-form-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem 0.5rem; }
+  .yandex-form-container h1 {
+    font-size: 2.5rem; }
+  .yandex-form-container iframe {
+    width: 30rem; }
 
 /*# sourceMappingURL=site.gen.css.map */

@@ -197,9 +197,20 @@ form{
     }
   }
 }
-
+.yandex-form-title{
+  min-height: 30vh;
+}
 .yandex-form-container{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: px-rem(32) px-rem(8);
+
+  h1{
+    font-size: px-rem(40);
+  }
+
+  iframe{
+    width: px-rem(480);
+  }
 }
